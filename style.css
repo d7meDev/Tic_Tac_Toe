@@ -1,0 +1,88 @@
+* {  
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial;
+}
+body{
+    background-color: hsl(0, 0%, 10%);
+}
+.container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,clamp(10px,33vw,200px));
+    grid-template-rows: repeat(3,clamp(10px,33vw,200px));
+    justify-content: center;
+    justify-items: stretch;
+    gap: 2rem;
+    
+     
+}
+
+header{
+ text-align: center;
+ color: rgb(245, 245, 245);
+ font-size: clamp(2rem,10vw,6rem);
+
+ background-color: rgb(87, 87, 87);
+ margin-bottom: 8vh;
+
+}
+
+.box {
+    background-color: rgb(87, 87, 87);
+    text-align: center;
+    font-size: 5rem;
+    border: 5px solid rgb(26, 26, 26);
+    padding: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+   
+
+    
+       
+}
+
+.token{
+    font-size: clamp(3rem,10vw,6rem);
+    color: rgb(235, 235, 235);
+}
+
+
+
+.message{
+
+    font-size: clamp(1rem,10vw,3rem);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(235, 235, 235);
+    background-color: hsla(0, 0%, 16%, 0.39);
+    padding: 1rem;
+    border: 1px solid white;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    
+    padding: 3vw;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .container{
+        gap:0.1rem
+    }
+    
+}
